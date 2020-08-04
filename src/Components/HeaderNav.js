@@ -36,7 +36,7 @@ const HeaderNav = () => {
     return (
         <header className={coloredStyle}>
             <img alt={"Logo"} src={require('../Assets/Logo_Morman_Blanco.png')}/>
-            {listMenu}
+            
         </header>
     );
 }
