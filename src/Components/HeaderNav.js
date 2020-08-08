@@ -1,23 +1,25 @@
 import React, {useState} from "react";
 import useDocumentScrollThrottled from "../useDocumentScrollThrottled";
 import useWindowSize from "../useWindowSize";
+import ListMenu from "./ListMenu";
+import Hamburger from "./Hamburger";
+import Overlay from "./Overlay";
+import {Link} from 'react-router-dom';
 
-const HeaderNav = () => {
+const HeaderNav = (props) => {
     let windowSize = useWindowSize().width;
+    let overStyle = {transform: "translateX(-100%"}
     const [coloredHeader, setColoredHeader] = useState(false);
+    const [isOpen, openMenu] =useState(false);
 
-    let listMenu = (
-        <ul>
-            <li><a href="index.html#home">Inicio</a></li>
-            <li><a href="index.html#about">Servicios de consultoría</a></li>
-            <li><a href="index.html#team">Conócenos</a></li>
-            <li><a href="index.html#projects">Blog</a></li>
-            <li><a href="index.html#contact">Contacto</a></li>
-        </ul>
-    );
+    let listMenu = <ListMenu setIndex={props.setIndex} openMenu={openMenu}/>;
+
     if(windowSize < 750) {
-        listMenu = ""
-    };
+        listMenu = <Hamburger isOpen={isOpen} openMenu={openMenu}/>
+    }
+    if(isOpen){
+        overStyle.transform = "translateX(0)";
+    }
 
     const MINIMUM_SCROLL = 600;
     const TIMEOUT_DELAY = 100;
@@ -36,7 +38,12 @@ const HeaderNav = () => {
     return (
         <header className={coloredStyle}>
             <img alt={"Logo"} src={require('../Assets/Logo_Morman_Blanco.png')}/>
-            
+            {listMenu}
+            <Overlay
+                isOpen={isOpen}
+                openMenu={openMenu}
+                setIndex={props.setIndex}
+                style={overStyle}/>
         </header>
     );
 }
