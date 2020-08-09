@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: lighter;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 code {
@@ -33,7 +34,7 @@ Link{
 /*__________________________________________HOME_______________________________________________*/
 
 .colored{
-  background-color: rgba(60,63,94, 0.8);
+  background-color: rgba(60, 63, 94, 0.8);
 }
 
 header{
@@ -408,7 +409,7 @@ a:hover:after {
 
 .solutionCont{
   color: #343434;
-  text-align: center;
+  text-justify: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,7 +444,7 @@ a:hover:after {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   width: 90%;
   margin: 20px;
@@ -458,14 +459,14 @@ a:hover:after {
   transition: 250ms;
 }
 .iconSol img{
-  height: 80px;
+  height: 40px;
 }
 .iconSol p{
   font-size: 15px;
   color: #444444;
 }
 .iconSol:hover{
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 /*____________________________________Contact____________________________________________*/
@@ -619,7 +620,6 @@ footer a:hover:after{
     width: 70%;
   }
   .overlayBlue img{
-    margin-top: 120px;
     width: 250px;
     height: auto;
   }
@@ -696,9 +696,10 @@ footer a:hover:after{
     height: 320px;
     position: fixed;
     left: 12%;
-    top: 50%;
+    top: 20%;
     background-color: rgba(232,232,232,0.85);
   }
+
   .serviceInfo img{
     width: 300px;
   }

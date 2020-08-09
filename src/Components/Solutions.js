@@ -7,10 +7,10 @@ const Solutions = () => {
             <div className={"serviceInfo"}>
                 <div className={"dataCont"}>
                     <h2>Digitales</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat </p>
+                    <p>Las plataformas digitales son los cimientos en los que se sostiene
+                        nuestra sociedad y civilización actual, desde su nacimiento han sido canales
+                    para el crecimiento muchas veces exponencial de empresas y negocios, nosotros te ayudaremos
+                    a explotar estas plataformas y dirigirlas hacie el crecimiento de tu empresa. </p>
                 </div>
                 <img alt={"Service"} src={require("../Assets/digitalService.png")}/>
             </div>

@@ -55,7 +55,7 @@ const Intro = (props) => {
             );
             imgStyle = {display: "none"}
             if(windowSize < 750){
-                overlayDisplay = {justifyContent: "flex-start"}
+                overlayDisplay = {justifyContent: "flex-end"}
             }
             break;
         case 5:
