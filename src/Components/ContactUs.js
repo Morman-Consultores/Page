@@ -23,7 +23,7 @@ const ContactUs = (props) => {
                 message: data.message
             })
         };
-        fetch('http://localhost:3001/submit', requestOptions)
+        fetch('https://mormanapi.herokuapp.com/submit', requestOptions)
             .then(response => response.json())
             .then(data => {
                 if(data){
