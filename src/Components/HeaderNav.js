@@ -12,7 +12,7 @@ const HeaderNav = (props) => {
     const [coloredHeader, setColoredHeader] = useState(false);
     const [isOpen, openMenu] =useState(false);
 
-    let listMenu = <ListMenu setIndex={props.setIndex} openMenu={openMenu}/>;
+    let listMenu = <ListMenu setIndex={props.setIndex} openMenu={openMenu} index={props.index}/>;
 
     if(windowSize < 750) {
         listMenu = <Hamburger isOpen={isOpen} openMenu={openMenu}/>
@@ -37,7 +37,9 @@ const HeaderNav = (props) => {
 
     return (
         <header className={coloredStyle}>
-            <img alt={"Logo"} src={require('../Assets/Logo_Morman_Blanco.png')}/>
+            <Link to={"/"} style={{padding: '0'}} onClick={() => props.setIndex(0)}>
+                <img alt={"Logo"} src={require('../Assets/Logo_Morman_Blanco.png')}/>
+            </Link>
             {listMenu}
             <Overlay
                 isOpen={isOpen}

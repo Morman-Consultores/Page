@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const ServiceCard = () => {
     return (
@@ -13,6 +14,7 @@ const ServiceCard = () => {
                         comercial</p>
                 </div>
             </div>
+
             <div className={"serviceCard"}>
                 <img alt={"Bussines"} src={require('../Assets/legal.png')}/>
                 <div className={"cardContent"}>

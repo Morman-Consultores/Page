@@ -10,32 +10,41 @@ const Intro = (props) => {
     library.add(fab);
     let windowSize = useWindowSize().width;
     const [coloredHeader, setColoredHeader] = useState(false);
-    const images = ['newYork.png', 'moscowSkyline.png','urban-building-lookup.png','newYorkMobile.png']
-    let introImgSrc = require(`../Assets/${images[0]}`);
+    let introImg = <img id={"intoImg"} alt={"introImg"} src={require('../Assets/newYork.png')}/>;
+    const images = [
+        <img id={"intoImg"} alt={"introImg"} src={require('../Assets/newYork.png')}/>,
+        <img id={"intoImg"} alt={"introImg"} src={require('../Assets/newYork02.png')}/>,
+        <img id={"intoImg"} alt={"introImg"} src={require('../Assets/moscowSkyline.png')}/>,
+        <img id={"intoImg"} alt={"introImg"} src={require('../Assets/urban-building-lookup.png')}/>,
+        <img id={"intoImg"} alt={"introImg"} src={require('../Assets/newYorkMobile.png')}/>
+    ];
     const MINIMUM_SCROLL = 300;
     const TIMEOUT_DELAY = 100;
     let genContent;
     let imgStyle = {width: "450px"}
     let overlayDisplay;
+    let coloredStyle;
     if(windowSize <750){
         imgStyle.width = "250px"
-        introImgSrc = require(`../Assets/${images[3]}`)
+        introImg = images[4];
     }
 
     switch (props.index) {
         case 1:
+            introImg = images[1]
             genContent = <h2>Nuestros Servicios</h2>;
             imgStyle = {width: "250px"}
             break;
         case 2:
+            introImg = images[2];
             genContent = <h1>Conócenos</h1>;
             imgStyle = {width: "250px"}
             break;
         case 3:
+            introImg = introImg = images[3];
             genContent =(
                 <span>
                     <h1>Blogs</h1>
-                    <p>Muy Pronto!</p>
                 </span>
             );
             imgStyle = {width: "250px"}
@@ -76,11 +85,12 @@ const Intro = (props) => {
         }, TIMEOUT_DELAY);
     });
 
-    const coloredStyle = coloredHeader ? 'colored' : '';
+    coloredStyle = coloredHeader ? 'colored' : '';
+    if(props.index === 5){coloredStyle = 'colored'}
 
     return(
         <div className={`introImg`}>
-            <img alt={"introImg"} src={introImgSrc}/>
+            {introImg}
             <div className={"overlayCont"}>
             </div>
             <div className={"overlayBlue"} style={overlayDisplay}>

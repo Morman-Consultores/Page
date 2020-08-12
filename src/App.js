@@ -13,13 +13,15 @@ import Services from "./Components/Services";
 import usePersistedState from "./usePersistedState";
 import AvisoPrivacidad from "./Components/AvisoPrivacidad";
 import AboutUs from "./Components/AboutUs";
+import Blogs from "./Components/Blogs";
+import TextBlog from "./Components/TextBlog";
 
 function App() {
     const [pageIndex, setIndex] = usePersistedState(0)
 
   return (
     <Router>
-        <HeaderNav setIndex={setIndex}/>
+        <HeaderNav setIndex={setIndex} index={pageIndex}/>
         <Switch>
             <Route path="/" exact component={Home}>
                 <Home/>
@@ -31,13 +33,16 @@ function App() {
                 <AboutUs index={pageIndex}/>
             </Route>
             <Route path={"/blog"}>
-                <Intro index={pageIndex}/>
+                <Blogs index={pageIndex}/>
             </Route>
             <Route path={"/contacto"}>
                 <ContactUs index={pageIndex}/>
             </Route>
             <Route path={"/privacidad"}>
                 <AvisoPrivacidad index={5} />
+            </Route>
+            <Route path={"/articulo"}>
+                <TextBlog index={5} />
             </Route>
         </Switch>
 

@@ -30,6 +30,33 @@ Link{
   color: #a8a8a8;
 }
 
+Link:hover:after{
+  width: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e8e8e8;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
 
 /*__________________________________________HOME_______________________________________________*/
 
@@ -39,7 +66,7 @@ Link{
 
 header{
   border: none;
-  border-bottom: solid #a8a8a8 1px;
+  border-bottom: solid rgba(255, 255, 255, 0.25) 1px;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -63,6 +90,10 @@ header img:hover{
   height: 100vh;
   width: 100%;
 }
+#introImg{
+  transition: 300ms;
+}
+
 .introImg img{
   width: 100%;
   height: 100%;
@@ -98,10 +129,10 @@ header img:hover{
 }
 .overlayBlue h1{
   font-weight: lighter;
-  color: #fefefe;
+  color: rgba(254, 254, 254, 0.75);
 }
 .overlayBlue h2{
-  color: #fefefe;
+  color: rgba(254, 254, 254, 0.75);
 }
 
 .socialIconBar{
@@ -152,31 +183,18 @@ li {
   font-weight: lighter;
 }
 a {
-  color: white;;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   letter-spacing: 0.15em;
 
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+  transition: 300ms;
 }
 a:hover{
   cursor: pointer;
-}
-a:after {
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 0.5px;
-  left: 50%;
-  position: absolute;
-  background-color: #ffffff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after {
-  width: 100%;
-  left: 0;
+  color: white;
 }
 
 .pymeMessage{
@@ -188,6 +206,7 @@ a:hover:after {
   padding: 20px;
   font-weight: lighter;
   color: #dcdcdc;
+  text-align: justify;
 }
 .pymeMessage h1{
   font-size: 2em;
@@ -235,7 +254,7 @@ a:hover:after {
   transition: 250ms;
 }
 .serviceCard:hover{
-  transform: scale(1.01);
+  transform: translateY(-15px);
   cursor: pointer;
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
@@ -376,7 +395,7 @@ a:hover:after {
   position: fixed;
   width: 100%;
   height: 89%;
-  top: 100px;
+  top: 105px;
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -438,6 +457,7 @@ a:hover:after {
 
 .dataCont{
   width: 30%;
+  text-align: justify;
 }
 
 .solutionList{
@@ -446,7 +466,7 @@ a:hover:after {
   justify-content: space-evenly;
   align-items: start;
   flex-wrap: wrap;
-  width: 90%;
+  width: 75%;
   margin: 20px;
 }
 
@@ -454,9 +474,16 @@ a:hover:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px;
+  justify-content: center;
+  width: 250px;
+  height: 165px;
   margin: 15px;
   transition: 250ms;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: -3px 3px 8px rgba(0,0,0,0.1);
+  padding: 5px;
+  text-align: center;
 }
 .iconSol img{
   height: 40px;
@@ -466,7 +493,8 @@ a:hover:after {
   color: #444444;
 }
 .iconSol:hover{
-  transform: scale(1.01);
+  transform: translateY(-5px);
+  box-shadow: -3px 3px 8px rgba(0,0,0,0.3);
 }
 
 /*____________________________________Contact____________________________________________*/
@@ -489,11 +517,11 @@ a:hover:after {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 15px 15%;
+  padding: 15px 10%;
 }
 
 .misVisData{
-  width: 500px;
+  width: 400px;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -563,6 +591,115 @@ label{
   cursor: pointer;
 }
 
+/*________________________________BLOGS__________________________________________*/
+
+.blogList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.blogTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.searchAndFilter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  margin: 0 5px;
+}
+.filter img{
+  width: 25px;
+}
+.filter img:hover{
+  cursor: pointer;
+}
+
+.searchBlogBtn{
+  border: none;
+  background-color: #43455e;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-family: 'Libre Baskerville', serif;
+}
+.searchBlogBtn:hover{
+  cursor: pointer;
+}
+
+.searchAndFilter input{
+  border: solid #727272 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 0 5px;
+  outline: none;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.blog{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.blog img{
+  border-radius: 15px;
+  width: 40%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: 250ms;
+}
+
+.blogInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 50%;
+}
+
+.blogInfo p{
+  font-size: 15px;
+  color: #656565;
+  margin: 0;
+}
+
+.readMoreBtn{
+  border: none;
+  background-color: #63725A;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-family: 'Libre Baskerville', serif;
+  transition: 300ms;
+  margin: 15px 0;
+}
+.readMoreBtn:hover{
+  cursor: pointer;
+  box-shadow: -2px 2px 6px rgba(0,0,0,0.3);
+}
 
 /*____________________________________Mobile____________________________________________*/
 
@@ -600,7 +737,7 @@ footer a:hover:after{
 
 .termCard{
   background-color: rgba(255, 255, 255, 0.9);
-  top: 20%;
+  top: 17%;
   left: 5%;
   width: 85%;
   height: 70%;
@@ -609,11 +746,27 @@ footer a:hover:after{
   align-content: center;
   color: #343434;
   overflow: auto ;
-  padding: 15px;
+  padding: 30px;
 }
 .termCard p{
   font-size: 15px;
+  text-align: justify;
 }
+.termCard li{
+  font-size: 15px;
+  text-align: justify;
+  display: block;
+  margin: 30px;
+}
+
+.termCard img{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.3);
+}
+
 
 @media only screen and (max-width: 750px) {
   .overlayBlue{
@@ -696,8 +849,9 @@ footer a:hover:after{
     height: 320px;
     position: fixed;
     left: 12%;
-    top: 20%;
-    background-color: rgba(232,232,232,0.85);
+    top: 16%;
+    background-color: rgb(232, 232, 232);
+    z-index: 0;
   }
 
   .serviceInfo img{
@@ -706,13 +860,64 @@ footer a:hover:after{
   .termCard{
     top: 17%;
     left: 5%;
-    width: 80%;
+    width: 85%;
     height: 75%;
+    padding: 10px;
   }
   .introMessage{
     padding: 15px 5%;
   }
   .missionVisionCont{
     padding: 15px 5%;
+  }
+  .iconSol{
+    width: 140px;
+    margin: 5px;
+    text-align: center;
+  }
+  .iconSol p{
+    font-size: 12px;
+  }
+  .blog{
+    flex-direction: column;
+  }
+  .blog img{
+    width: 90%;
+  }
+
+  .blogInfo{
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .solutionList{
+    width: 95%;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(232, 232, 232, 0);
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+  }
+  .termCard li{
+    margin: 15px;
+  }
+
+  .termCard img{
+    width: 90%;
   }
 }
