@@ -12,8 +12,8 @@ const AvisoPrivacidad = (props) => {
                     “MORMAN” hace de su conocimiento la política de privacidad y manejo de datos
                     personales, en la que en todo momento buscarán que el tratamiento de los mismos
                     sea legítimo, controlado e informado, a efecto de garantizar la privacidad de los
-                    mismos. “MORMAN” será el responsable de sus datos personales, su domicilio es:
-                    _________________________--. Los datos personales que proporcione cualquier
+                    mismos. “MORMAN” será el responsable de sus datos personales. Los datos personales
+                    que proporcione cualquier
                     persona física, incluyendo sin limitar, toda persona que envíe información en el
                     formulario de contacto de la página oficial, contactos vía Facebook, Twitter,
                     Instagram, LinkedIn o cualquier red social, contactos vía telefónica, clientes,
@@ -43,7 +43,7 @@ const AvisoPrivacidad = (props) => {
                     como oponerte al uso de tus datos personales para fines específicos (Oposición).
                     Estos derechos se conocen como derechos ARCO.
                     Para el ejercicio de cualquiera de los derechos ARCO, deberás presentar la solicitud
-                    respectiva a través de un correo electrónico dirigido a ____________, quien te
+                    respectiva a través de un correo electrónico dirigido a <a href={"mailto:vguzman@morman.page"}>vguzman@morman.page</a>, quien te
                     informará sobre el procedimiento, requisitos, plazos de respuesta, la forma en que
                     haremos efectivo tú derecho, y se atenderá cualquier duda, queja o comentario que
                     tengas al respecto.</p>
@@ -54,7 +54,7 @@ const AvisoPrivacidad = (props) => {
                     que es posible que por alguna obligación legal requiramos seguir tratando tus datos
                     personales.
                     Para revocar tu consentimiento deberás presentar tu solicitud a través de un correo
-                    electrónico dirigido ____________, donde se te informará sobre el procedimiento y
+                    electrónico dirigido <a href={"mailto:vguzman@morman.page"}>vguzman@morman.page</a>, donde se te informará sobre el procedimiento y
                     requisitos para el ejercicio de este derecho, plazos de respuesta, la forma en que
                     haremos efectivo tú derecho, y se atenderá cualquier duda, queja o comentario que
                     tengas al respecto relacionada con el tratamiento de tus datos personales.</p>
@@ -94,7 +94,7 @@ const AvisoPrivacidad = (props) => {
                     fecha en que usted los proporcionó al Responsable. En caso que dese ejercer sus
                     derechos de acceso, rectificación, cancelación u oposición, estos los podrán ejercer
                     en todo momento dirigiendo su solicitud a (i) al correo electrónico
-                    _____________________ y/o (ii) al siguiente domicilio: ____________, de Lunes a
+                    <a href={"mailto:vguzman@morman.page"}>vguzman@morman.page</a> de Lunes a
                     Viernes de las 9:00 a las 18:00 horas, en días hábiles, según corresponda.
                     Para lo anterior, deberá hacernos saber fehacientemente los datos personales que
                     usted desea sean rectificados, cancelados o revisados, así como el propósito para el

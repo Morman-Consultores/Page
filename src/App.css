@@ -241,7 +241,7 @@ a:hover{
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .serviceCard{
@@ -292,8 +292,8 @@ a:hover{
   border: none;
   border-radius: 5px;
   background-color: #4D4F63;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 5px 20px;
+  font-size: 16px;
   color: #e8e8e8;
   font-family: 'Libre Baskerville', serif;
   outline: none;
@@ -505,6 +505,7 @@ a:hover{
   align-items: center;
   justify-content: space-evenly;
   color: #343434;
+  text-align: justify;
 }
 
 .introMessage{
@@ -518,6 +519,7 @@ a:hover{
   align-items: center;
   justify-content: space-evenly;
   padding: 15px 10%;
+  text-align: justify;
 }
 
 .misVisData{
@@ -765,6 +767,11 @@ footer a:hover:after{
   margin-right: auto;
   border-radius: 15px;
   box-shadow: -2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.termCard a{
+  color: #252636;
+  text-decoration: underline;
 }
 
 

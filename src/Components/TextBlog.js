@@ -8,7 +8,7 @@ const TextBlog = (props) => {
             <Intro index={props.index}/>
             <div className={"termCard"}>
                 <Link style={{color: "#383838", textDecoration: "underline"}} to={"blog"}>REGRESAR</Link>
-                <p>Juan Ignacio Mora, Noviembre 21, 2018</p>
+                <p>Juan Mora, Noviembre 21, 2018</p>
                 <h2>Alianzas ¿Clave del éxito?</h2>
                 <p>En el mundo empresarial, así como en la vida personal en algunas ocasiones debemos entender
                     la gran necesidad de conocernos a nosotros mismos, es decir, en diferentes circunstancias

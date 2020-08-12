@@ -1,6 +1,7 @@
 import React from "react";
 import Intro from "./Intro";
 import Foot from "./Foot";
+import ContactButton from "./ContactButton";
 
 const AboutUs = (props) => {
     return (
@@ -26,7 +27,7 @@ const AboutUs = (props) => {
             <div className={"missionVisionCont"}>
                 <div className={"misVisData"}>
                     <h4>MISIÓN</h4>
-                    <p>Morman es actualmente una consultoría multidisciplinaria, cuyo objetivo es ayudar a crecer a las
+                    <p>Morman una consultoría multidisciplinaria, cuyo objetivo es ayudar a crecer a las
                         empresas que lo requieran y de esta forma posicionarse en el más alto nivel en el ramo. Somos
                         creadores de networking, por lo que no sólo te ayudaremos con temas administrativos,
                         comerciales, R.H., Soluciones digitales y legales. Sino también te contactaremos con otras
@@ -39,6 +40,7 @@ const AboutUs = (props) => {
                         como de tu propio negocio o empresa.</p>
                 </div>
             </div>
+            <ContactButton/>
             <Foot/>
         </div>
     )

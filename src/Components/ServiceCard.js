@@ -48,19 +48,11 @@ const ServiceCard = () => {
                 <div className={"cardContent"}>
                     <img alt={"Bussiness"} src={require('../Assets/strategyIcon.png')}/>
                     <h3>ESTRATEGICOS</h3>
-                    <p>Lorem Ipsum Dolo sit amet
-                        consectetur adipiscing eli</p>
+                    <p>Desarrolo y unificación de herramientas clave dentro de tu empresa para el crecimiento
+                    exponencial.</p>
                 </div>
             </div>
-            <div className={"serviceCard"}>
-                <img alt={"Bussines"} src={require('../Assets/admin.png')}/>
-                <div className={"cardContent"}>
-                    <img alt={"Bussiness"} src={require('../Assets/adminIcon.png')}/>
-                    <h3>ADIMNISTRATIVOS</h3>
-                    <p>Lorem Ipsum Dolo sit amet
-                        consectetur adipiscing eli</p>
-                </div>
-            </div>
+
         </div>
     );
 }

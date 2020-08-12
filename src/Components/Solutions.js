@@ -48,7 +48,7 @@ const Solutions = () => {
                     <p>Las plataformas digitales son los cimientos en los que se sostiene
                         nuestra sociedad y civilización actual, desde su nacimiento han sido canales
                         para el crecimiento muchas veces exponencial de empresas y negocios, nosotros te ayudaremos
-                        a explotar estas plataformas y dirigirlas hacie el crecimiento de tu empresa. </p>
+                        a explotar estas plataformas y dirigirlas hacia el crecimiento de tu empresa. </p>
                 </div>
                 <img alt={"Service"} src={require("../Assets/digitalService.png")}/>
             </div>
@@ -76,7 +76,7 @@ const Solutions = () => {
                     <h2>Recursos Humanos</h2>
                     <p>En MORMAN no creemos en el recorte del personal, creemos en la correcta motivación y
                         capacitación que otorgan las empresas a sus colaboradores. Así como el respeto a la
-                         integridad y derecho humano, recuerda que antes de ser empleados, son humanos </p>
+                         integridad y derecho humano, recuerda que antes de ser empleados, son humanos. </p>
                 </div>
                 <img alt={"Service"} src={require("../Assets/humanResource.png")}/>
             </div>

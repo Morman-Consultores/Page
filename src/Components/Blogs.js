@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from "./Intro";
 import Foot from "./Foot";
 import {Link} from "react-router-dom";
+import ContactButton from "./ContactButton";
 
 const Blogs = (props) => {
     return(
@@ -25,7 +26,7 @@ const Blogs = (props) => {
                 <div className={"blog"}>
                     <img alt={"Blog Picture"} src={require('../Assets/aliance.png')}/>
                     <div className={"blogInfo"}>
-                        <p>Juan Ignacio Mora, Noviembre 21, 2018</p>
+                        <p>Juan Mora, Noviembre 21, 2018</p>
                         <h2>Alianzas ¿Clave del éxito?</h2>
                         <p>En el mundo empresarial, así como en la vida personal en algunas ocasiones debemos entender
                             la gran necesidad de conocernos a nosotros mismos, es decir, en diferentes circunstancias
@@ -36,6 +37,7 @@ const Blogs = (props) => {
                     </div>
                 </div>
             </div>
+            <ContactButton/>
             <Foot/>
         </div>
     )
