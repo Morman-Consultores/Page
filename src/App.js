@@ -2,7 +2,6 @@ import React from 'react';
 import HeaderNav from "./Components/HeaderNav";
 import './App.css';
 import Home from "./Components/Home";
-import Intro from "./Components/Intro";
 import {
     BrowserRouter as Router,
     Switch,
