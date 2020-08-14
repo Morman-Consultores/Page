@@ -9,7 +9,7 @@ const PYMEMessage = () => {
                     empresas. Estamos consientes que en esta época la situación es aún más complicada, es por esto
                     que nuestra consultora está ofreciendo una sesión de consultoría gratuita para aquellos que lo
                     necesiten, permítenos demostrar que nuestra intención es ayudar y acompañarte en este camino
-                    de regreso al éxito de tu empresa.v</p>
+                    de regreso al éxito de tu empresa.</p>
             </div>
             <div className={"logoCont"}>
                 <img alt={"Logo"} src={require('../Assets/Logo_Morman_Blanco.png')}/>
