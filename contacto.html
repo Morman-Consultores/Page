@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacto | Morman Consultores</title>
+
+        <meta
+            name="description"
+            content="Aplicación Web de Morman Consultores,En MORMAN nos preocupamos por el crecimiento y desarrollo de las pequeñas y medianas
+            empresas. Estamos consientes que en esta época la situación es aún más complicada, es por esto
+            que nuestra consultora está ofreciendo una sesión de consultoría gratuita para aquellos que lo
+            necesiten, permítenos demostrar que nuestra intención es ayudar y acompañarte en este camino
+            de regreso al éxito de tu empresa. "
+        />
+        
+        <meta charset="utf-8" />
+        <link rel="icon" href="./Assets/Logo_Morman_Blanco.png" />
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#3C3F5E" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27a1b6d948.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header id="header" class=coloredStyle>
+            <img alt="Logo" src='./Assets/Logo_Morman_Blanco.png'/>
+            <ul>
+                <li><a href="index">Inicio</a></li>
+                <li><a href="servicios">Servicios de consultoría</a></li>
+                <li><a href="conocenos">Conócenos</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a style="color: white; border-bottom: solid white 1px;" href="contacto">Contacto</a></li>
+            </ul>
+            <div id="hamburger" class="container" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </header>
+        </header>
+        <div id="myNav" class="overlay index-2">
+            <div class="overlay-content1 ">
+                <a href="index" onclick="openNav()">Inicio</a>
+                <a href="servicios" onclick="openNav()">Servicios de consiultoría</a>
+                <a href="conocenos" onclick="openNav()">Conócenos</a>
+                <a href="blog" onclick="openNav()">Blog</a>
+                <a href="contacto" onclick="openNav()">Contacto</a>
+                <h5 style="margin-top: 250px;">&copy; Morman Consultores</h5>
+            </div>
+            <div class="overlay-content2"></div>
+        </div>
+        <div class='introImg'>
+            <img id="intoImg" alt="introImg" src='./Assets/urban-building-lookup.png'/>
+            <div class="overlayCont">
+            </div>
+            <div class="overlayBlue" style="justify-content: flex-end;">
+                <div class="generic">
+                    <h2>Comunícate con nosotros</h2>
+                    <p>¿Necesitas más información? </p>
+                    <p>Escribenos o llamanos a nuestros telefonos</p>
+                    <!--<i icon={faPhoneAlt} size="1x"} color="white"} style="margin: 0 5px"/>
+                    <a href="tel:5527302482"}>+55 2730 2482</a>
+                    <br/><br/>-->
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jmora@morman.page"}>jmora@morman.page</a>
+                </div>
+            </div>
+            <div class='socialIconBar' id="iconBar">
+                <a target="blank" href="https://www.facebook.com/MormanConsultoresMX/">
+                    <i class="fab fa-facebook-square fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.instagram.com/mormanconsultoresmx/">
+                    <i class="fab fa-instagram fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.linkedin.com/company/morman-consultores/">
+                    <i class="fab fa-linkedin fa-2x icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--Arriba todas las páginas-->
+        <div class="formCard">
+            <h3>CONTÁCTANOS</h3>
+            <form>
+
+                <input id="name" class="inputStyle" type="text" name="name" placeholder="Nombre" ref=register( required: true )/>
+
+                <input id="email" class="inputStyle" type="email" name="email" placeholder="Correo electrónico"  />
+
+                <label>Mensaje:</label>
+                <textarea id="message" class="inputStyle message" name="message" ></textarea>
+
+                <p id="response"></p>
+
+                <button class="submitBtn" type="button" onclick="Submit()">Enviar</button>
+
+            </form>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>

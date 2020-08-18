@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morman Consultores</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175443250-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-175443250-1');
+        </script>
+
+        <meta charset="utf-8" />
+        <link rel="icon" href="./Assets/Logo_Morman_Blanco.png" />
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#3C3F5E" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27a1b6d948.js" crossorigin="anonymous"></script>
+
+        <meta
+            name="application-name"
+            content="Morman Consultores"
+        />
+        <meta
+            name="description"
+            content="Aplicación Web de Morman Consultores,En MORMAN nos preocupamos por el crecimiento y desarrollo de las pequeñas y medianas
+            empresas. Estamos consientes que en esta época la situación es aún más complicada, es por esto
+            que nuestra consultora está ofreciendo una sesión de consultoría gratuita para aquellos que lo
+            necesiten, permítenos demostrar que nuestra intención es ayudar y acompañarte en este camino
+            de regreso al éxito de tu empresa. "
+        />
+        <meta
+            name="keywords"
+            content="Morman Consultores, MormanConsultores ,Morman, Consultores, Consultoría, Consultoría Legal, Consultoria,
+            Consultoria Estrategica, Consultoria Digital, Consultoria en Mercadotecnia, Consultoria en Recursos Humanos,
+            Emprendimiento, Ayuda a PYMES, PYMES, Crecimiento empresarial"    
+        />
+        <meta
+            name="author"
+            content="Juan Mora"    
+        />
+        <meta name="robots" content="index" /> 
+        <meta name="googlebot" content="index" />
+        <meta name="robots" content="follow" />
+    </head>
+    <body>
+        <header id="header">
+            <img alt="Logo" src='./Assets/Logo_Morman_Blanco.png'/>
+                <ul>
+                    <li><a style="color: white; border-bottom: solid white 1px;" href="index">Inicio</a></li>
+                    <li><a href="servicios">Servicios de consultoría</a></li>
+                    <li><a href="conocenos">Conócenos</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contacto">Contacto</a></li>
+                </ul>
+                <div id="hamburger" class="container" onclick="openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                </header>
+        </header>  
+
+        <div id="myNav" class="overlay index-2">
+            <div class="overlay-content1 ">
+              <a href="index" onclick="openNav()">Inicio</a>
+              <a href="servicios" onclick="openNav()">Servicios de consiultoría</a>
+              <a href="conocenos" onclick="openNav()">Conócenos</a>
+              <a href="blog" onclick="openNav()">Blog</a>
+              <a href="contacto" onclick="openNav()">Contacto</a>
+              <h5 style="margin-top: 250px;">&copy; Morman Consultores</h5>
+            </div>
+            <div class="overlay-content2"></div>
+        </div>
+        <div class='introImg'>
+            <img id="intoImg" alt="introImg" src='./Assets/newYork.png'/>
+            <div class="overlayCont">
+            </div>
+            <div class="overlayBlue">
+                <img alt="Logo" src='./Assets/tituloMormanBlanco.png'/>
+                
+            </div>
+            <div class='socialIconBar' id="iconBar">
+                <a target="blank" href="https://www.facebook.com/MormanConsultoresMX/">
+                    <i class="fab fa-facebook-square fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.instagram.com/mormanconsultoresmx/">
+                    <i class="fab fa-instagram fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.linkedin.com/company/morman-consultores/">
+                    <i class="fab fa-linkedin fa-2x icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--Arriba todas las páginas-->
+
+        <div class="pymeMessage">
+            <div class="messageCont">
+                <h1>Mensaje para las Pymes:</h1>
+                <p>En MORMAN nos preocupamos por el crecimiento y desarrollo de las pequeñas y medianas
+                    empresas. Estamos consientes que en esta época la situación es aún más complicada, es por esto
+                    que nuestra consultora está ofreciendo una sesión de consultoría gratuita para aquellos que lo
+                    necesiten, permítenos demostrar que nuestra intención es ayudar y acompañarte en este camino
+                    de regreso al éxito de tu empresa.</p>
+            </div>
+            <div class="logoCont">
+                <img alt="Logo" src='./Assets/Logo_Morman_Blanco.png'/>
+                <img alt="Logo" src='./Assets/tituloMormanBlanco.png'/>
+            </div>
+        </div>
+        <h2>Nuestros Servicios</h2>
+        <div class="serviceCont">
+            <a href="servicios">
+                <div class="serviceCard">
+                    <img alt="Bussines" src='./Assets/bussiness.png'/>
+                    <div class="cardContent">
+                        <img alt="Bussiness" src='./Assets/bussinessIcon.png'/>
+                        <h3>COMERCIAL</h3>
+                        <p>Estudio de crecimiento y
+                            desarrollo de fuerza
+                            comercial</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="servicios#legal">
+                <div class="serviceCard">
+                    <img alt="Bussines" src='./Assets/legal.png'/>
+                    <div class="cardContent">
+                        <img alt="Bussiness" src='./Assets/legalIcon.png'/>
+                        <h3>LEGAL</h3>
+                        <p>Desarrollo de asuntos legales
+                            con objetivo de protección
+                            empresarial</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="servicios#RH">
+                <div class="serviceCard">
+                    <img alt="Bussines" src='./Assets/humaResources.png'/>
+                    <div class="cardContent">
+                        <img alt="Bussiness" src='./Assets/rhIcon.png'/>
+                        <h3>RECURSOS HUMANOS</h3>
+                        <p>Estrategias de crecimiento y
+                            desarrollo de Recursos
+                            Humanos dentro de la empresa</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="servicios#digital">
+                <div class="serviceCard">
+                    <img alt="Bussines" src='./Assets/digital.png'/>
+                    <div class="cardContent">
+                        <img alt="Bussiness" src='./Assets/digitalIcon.png'/>
+                        <h3>DIGITALES</h3>
+                        <p>Desarrollo multiplataforma y estrategias de Mercadotecnia Digital</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="servicios#estrategico">
+                <div class="serviceCard">
+                    <img alt="Bussines" src='./Assets/strategy.png'/>
+                    <div class="cardContent">
+                        <img alt="Bussiness" src='./Assets/strategyIcon.png'/>
+                        <h3>ESTRATEGICOS</h3>
+                        <p>Desarrolo y unificación de herramientas clave dentro de tu empresa para el crecimiento
+                        exponencial.</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <!--Todo abajo para todas las páginas-->
+        <div>
+            <h2>“Seremos el sastre que te ayudará a fabricar el saco empresarial a tu medida”</h2>
+            <button type="button" class="contactButton"><a href="mailto:Jmora@morman.page">CONTÁCTANOS</a>  </button>
+        </div>
+        <footer>
+            <a className="footlink" href="aviso">Aviso de privacidad</a>
+            <p>&copy; MORMAN CONSULTORES 2020</p>
+        </footer>
+    <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>

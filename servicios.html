@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servicios | Morman Consultores</title>
+
+        <meta
+            name="description"
+            content="Aplicación Web de Morman Consultores,En MORMAN nos preocupamos por el crecimiento y desarrollo de las pequeñas y medianas
+            empresas. Estamos consientes que en esta época la situación es aún más complicada, es por esto
+            que nuestra consultora está ofreciendo una sesión de consultoría gratuita para aquellos que lo
+            necesiten, permítenos demostrar que nuestra intención es ayudar y acompañarte en este camino
+            de regreso al éxito de tu empresa. "
+        />
+
+        <meta charset="utf-8" />
+        <link rel="icon" href="./Assets/Logo_Morman_Blanco.png" />
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#3C3F5E" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27a1b6d948.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header id="header" className={coloredStyle}>
+            <img alt="Logo" src='./Assets/Logo_Morman_Blanco.png'/>
+            <ul>
+                <li><a href="index">Inicio</a></li>
+                <li><a style="color: white; border-bottom: solid white 1px;" href="servicios">Servicios de consultoría</a></li>
+                <li><a href="conocenos">Conócenos</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contacto">Contacto</a></li>
+            </ul>
+            <div id="hamburger" class="container" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </header>
+        </header>
+        <div id="myNav" class="overlay index-2">
+            <div class="overlay-content1 ">
+              <a href="index" onclick="openNav()">Inicio</a>
+              <a href="servicios" onclick="openNav()">Servicios de consiultoría</a>
+              <a href="conocenos" onclick="openNav()">Conócenos</a>
+              <a href="blog" onclick="openNav()">Blog</a>
+              <a href="contacto" onclick="openNav()">Contacto</a>
+              <h5 style="margin-top: 250px;">&copy; Morman Consultores</h5>
+            </div>
+            <div class="overlay-content2"></div>
+        </div>
+        <div class='introImg'>
+            <img id="intoImg" alt="introImg" src='./Assets/newYork02.png'/>
+            <div class="overlayCont">
+            </div>
+            <div class="overlayBlue">
+                <img alt="Logo" src='./Assets/tituloMormanBlanco.png'/>
+                <h2>SERVICIOS</h2>
+            </div>
+            <div class='socialIconBar' id="iconBar">
+                <a target="blank" href="https://www.facebook.com/MormanConsultoresMX/">
+                    <i class="fab fa-facebook-square fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.instagram.com/mormanconsultoresmx/">
+                    <i class="fab fa-instagram fa-2x icon"></i>
+                </a>
+                <a target="blank" href="https://www.linkedin.com/company/morman-consultores/">
+                    <i class="fab fa-linkedin fa-2x icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--Todo Arriba igual-->
+
+        <div id="overlayGray" class="grayScreen"></div>
+        <div id="myDropdown" class="dropdown-content">
+            <i onclick="myFunction()" class="far fa-times-circle fa-m exit"></i>
+            <h2>¿Necesitas más información? </h2>
+            <p>Contáctanos</p>
+            <form>
+                <input id="name" type="text" name="nombre" placeholder="Nombre"/><br/>
+                <input id="email" type="email" name="email" placeholder="Correo electrónico"/><br/>
+                <textarea id="message" name="message" placeholder="Mensaje"></textarea><br/>
+                <button class="submitBtn" type="button" onclick="Submit()" >Enviar</button>
+                <p style="text-align: center" id="response"></p>
+            </form>
+        </div>
+
+        <div class="solutionCont">
+            <h1>Nuestras Soluciones</h1>
+
+            <div id="estrategico" class="serviceInfo">
+                <div class="dataCont"}>
+                    <h2>Estratégicas</h2>
+                    <p>Si ya cuentas con herramientas clave dentro de tu empresa, pero no
+                        sabes cómo unificarlo ¡no te preocupes ¡Seremos tu apoyo estratégico para que
+                        puedas visualizar tus objetivos a mediano y a corto plazo! Te ayudaremos a desarrollar tu
+                        negocio a través del crecimiento que mejor se adapte a tu mercado y a tu negocio principal. </p>
+                </div>
+                <img alt="Service" src="./Assets/strategy.png"/>
+            </div>
+            <div class="solutionList">
+
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/king.png"/>
+                    <p>Desarrollo de KPI´s a mediano y largo plazo </p>
+                </div>
+                
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/queen.png"/>
+                    <p>Análisis operativos para optimización clave de recursos</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/alfil.png"/>
+                    <p>Lecturas de tiempos y de Lead Time para mejorar el tiempo de entrega de productos o servicios. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/chess.png"/>
+                    <p>Desarrollo de estrategias comerciales basados en la facturación anual deseada.</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/tower.png"/>
+                    <p>Capacitación a vendedores para mejora de habilidades blandas enfocadas en la negociación y cierre de ventas. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/pawn.png"/>
+                    <p>Creación de red y cuidado personalizado para dar seguimiento a tus clientes nuevos y actuales. </p>
+                </div>
+            </div>
+
+            <div id="legal" class="serviceInfo">
+                <div class="dataCont"}>
+                    <h2>Legales</h2>
+                    <p>Cualquier acto comercial que planees hacer conlleva un cuidado jurídico, por lo que debes 
+                        de cumplir con las normativas para el correcto funcionamiento de tu PyMe. Nos encargaremos 
+                        de de los contratos que puedas llegar a necesitar para el debido funcionamiento de tu empresa,
+                         nos preocupa que la misma tenga un buen desarrollo comercial y evitarte caer en multas de 
+                         organismos gubernamentales o en una negociación desequilibrada con inversores, proveedores, 
+                         clientes, etc.
+
+                    </p>
+                </div>
+                <img alt="Service" src="./Assets/legal.png"/>
+            </div>
+            <div class="solutionList">
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/certificate01.png"/>
+                    <p>Contrato de prestación de servicios.</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/signing.png"/>
+                    <p>Contratos de arrendamiento.</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/contract03.png"/>
+                    <p>Estudio y registro de de Marcas y Patentes. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/people.png"/>
+                    <p>Despidos y contratación de personal.</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/signing.png"/>
+                    <p>Asambleas generales y extraordinarias. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/merchant.png"/>
+                    <p>Constitución de sociedades mercantiles. </p>
+                </div>
+            </div>
+
+            <div id="digital" class="serviceInfo">
+                <div class="dataCont">
+                    <h2>Digitales</h2>
+                    <p>Las plataformas digitales son los cimientos en los que se sostiene
+                        nuestra sociedad y civilización actual, desde su nacimiento han sido canales
+                        para el crecimiento muchas veces exponencial de empresas y negocios, nosotros te ayudaremos
+                        a explotar estas plataformas y dirigirlas hacia el crecimiento de tu empresa. </p>
+                </div>
+                <img alt="Service" src="./Assets/digitalService.png"/>
+            </div>
+            <div class="solutionList">
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/Web.png"/>
+                    <p>Desarrollo de plataformas WEB</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/Mobile.png"/>
+                    <p>Desarrollo de plataformas Móviles</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/digitalMkt.png"/>
+                    <p>Estrategias para generar fuerte presencia en línea</p>
+                </div>
+                <div onclick="myFunction()" class="iconSol">
+                    <img alt="Service" src="./Assets/digitalOptimization.png"/>
+                    <p>Optimización de plataformas digitales</p>
+                </div>
+            </div>
+
+            <div id="RH" class="serviceInfo"}>
+                <div class="dataCont"}>
+                    <h2>Recursos Humanos</h2>
+                    <p>En MORMAN no creemos en el recorte del personal, creemos en la correcta motivación y
+                        capacitación que otorgan las empresas a sus colaboradores. Así como el respeto a la
+                         integridad y derecho humano, recuerda que antes de ser empleados, son humanos. </p>
+                </div>
+                <img alt="Service"} src="./Assets/humanResource.png"/>
+            </div>
+            <div class="solutionList"}>
+                <div onclick="myFunction()" class="iconSol"}>
+                    <img alt="Service"} src="./Assets/poll.png"/>
+                    <p>Desarrollo de encuestas de NPS tropicalizadas a tu industria y sector. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol"}>
+                    <img alt="Service"} src="./Assets/motivation.png"/>
+                    <p>Evaluación de motivaciones por desempeño para incrementar la productividad de tu personal. </p>
+                </div>
+                <div onclick="myFunction()" class="iconSol"}>
+                    <img alt="Service"} src="./Assets/jobPosition.png"/>
+                    <p>Definir perfil vs posición para enfocar a las personas en sus puestos ideales, no en sus puestos descriptivos</p>
+                </div>
+            </div>
+
+        </div>
+        <!--Todo abajo para todas las páginas-->
+        <div>
+            <h2>“Seremos el sastre que te ayudará a fabricar el saco empresarial a tu medida”</h2>
+            <button type="button" class="contactButton"><a href="mailto:Jmora@morman.page">CONTÁCTANOS</a>  </button>
+        </div>
+        <footer>
+            <a className="footlink" href="aviso">Aviso de privacidad</a>
+            <p>&copy; MORMAN CONSULTORES 2020</p>
+        </footer>
+    <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
