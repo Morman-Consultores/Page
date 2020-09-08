@@ -602,6 +602,32 @@ body {
     cursor: pointer;
   }
   
+  /*________________________________LOADER________________________________________*/
+
+  .loader {
+    border: 5px solid #bdbdbd;
+    border-radius: 100%;
+    border-top: 5px solid #2975a8;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
   /*________________________________BLOGS__________________________________________*/
   
   .blogList{
@@ -954,7 +980,7 @@ body {
     }
     .formCard{
       width: 73%;
-      height: 350px;
+      height: fit-content;
       position: fixed;
       left: 12%;
       top: 16%;

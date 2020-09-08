@@ -39,7 +39,16 @@ const Submit = () => {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
-  const requestOptions = {
+
+
+  if(name === "" || email === "" || message === ""){
+
+    document.getElementById("response").innerHTML = "¡Porfavor, llene todos los campos!";
+    document.getElementById("response").style.color = "#E85656"
+  } else {
+    document.getElementById('loader').style.display = "block"
+    console.log(name, email, message)
+    const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -47,18 +56,22 @@ const Submit = () => {
           email: email,
           message: message
       })
-  };
-  fetch('https://mormanapi.herokuapp.com/submit', requestOptions)
+    };
+    fetch('https://mormanapi.herokuapp.com/submit', requestOptions)
       .then(response => response.json())
       .then(data => {
           if(data){
               console.log(data)
+              document.getElementById("response").innerHTML = "";
+              document.getElementById('loader').style.display = "none"
+              document.getElementById("response").style.color = "#343434"
               document.getElementById("response").innerHTML = data;
               document.getElementById("name").value = "";
               document.getElementById("email").value = "";
               document.getElementById("message").value = "";
           }
       });
+  }
 }
 
 navigator.serviceWorker.getRegistrations().then(function(registrations) {
