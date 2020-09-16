@@ -68,10 +68,25 @@
                 </a>
             </div>
         </div>
+
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
         <!--Arriba todas las páginas-->
         <div class="termCard">
             <a style="color: #383838; text-decoration: underline"}} href="blog#blogs">REGRESAR</a>
-            <p>Juan Mora, Noviembre 21, 2018</p>
+            <div class="topBlogArea">
+                <p>Juan Mora, Noviembre 21, 2018</p>
+                <div class="fb-share-button" data-href="https://morman.page/articulo2" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmorman.page%2Farticulo2&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+            </div>
             <h2>Alianzas ¿Clave del éxito?</h2>
             <p>En el mundo empresarial, así como en la vida personal en algunas ocasiones debemos entender
                 la gran necesidad de conocernos a nosotros mismos, es decir, en diferentes circunstancias

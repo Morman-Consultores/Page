@@ -1,3 +1,12 @@
+window.fbAsyncInit = function() {
+  FB.init({
+    appId            : 945218059305165,
+    autoLogAppEvents : true,
+    xfbml            : true,
+    version          : 'v8.0'
+  });
+};
+
 let closedNav = true;
 let hamburger = document.getElementById("hamburger")
 
@@ -78,3 +87,11 @@ navigator.serviceWorker.getRegistrations().then(function(registrations) {
   for(let registration of registrations) {
    registration.unregister()
  } })
+
+const share = () => {
+  FB.ui({
+    display: 'popup',
+    method: 'share',
+    href: 'https://developers.facebook.com/docs/',
+  }, function(response){});
+}
